@@ -29,7 +29,6 @@ public class PermutationChecker {
         .map(String::chars)
         .flatMap(IntStream::boxed)
         .collect(Collectors.toSet());
-        s1.chars().boxed().collect(Collectors.toSet());
 
         return uniquesValue.size() == s1.length();
 
