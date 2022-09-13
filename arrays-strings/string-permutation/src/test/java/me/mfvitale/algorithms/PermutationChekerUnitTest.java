@@ -29,7 +29,7 @@ class PermutationChekerUnitTest {
     @DisplayName("One or more empty strings return false")
     void emptyString() {
 
-        assertThat(permutationsChecker.isPermutations("", "non empry")).isTrue();
+        assertThat(permutationsChecker.isPermutations("", "non empry")).isFalse();
     }
 
     @Test
@@ -44,5 +44,15 @@ class PermutationChekerUnitTest {
     void permutable() {
 
         assertThat(permutationsChecker.isPermutations("act", "cat")).isTrue();
+        assertThat(permutationsChecker.isPermutations("a ct", "ca t")).isTrue();
+
+    }
+
+    @Test
+    @DisplayName("When two string are not permutable return faòse")
+    void notPermutable() {
+
+        assertThat(permutationsChecker.isPermutations("dog", "doggo")).isFalse();
+
     }
 }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.39">
+<file name="/workspaces/algorithms-data_structures/arrays-strings/string-permutation/src/main/java/me/mfvitale/algorithms/PermutationChecker.java">
+<error line="3" column="8" severity="error" message="Unused import - java.util.Set." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="4" column="8" severity="error" message="Unused import - java.util.stream.Collectors." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="6" column="1" severity="error" message="Missing a Javadoc comment." source="com.puppycrawl.tools.checkstyle.checks.javadoc.MissingJavadocTypeCheck"/>
+<error line="14" column="8" severity="error" message="&apos;method def&apos; child has incorrect indentation level 7, expected level should be 8." source="com.puppycrawl.tools.checkstyle.checks.indentation.IndentationCheck"/>
+</file>
+<file name="/workspaces/algorithms-data_structures/arrays-strings/string-permutation/src/test/java/me/mfvitale/algorithms/PermutationChekerUnitTest.java">
+<error line="5" column="1" severity="error" message="Extra separation in import group before &apos;org.junit.jupiter.api.BeforeEach&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="error" message="Wrong order for &apos;org.junit.jupiter.api.BeforeEach&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="7" column="1" severity="error" message="&apos;org.assertj.core.api.Assertions.assertThat&apos; should be separated from previous imports." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+</file>
+</checkstyle>
